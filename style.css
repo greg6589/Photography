@@ -242,3 +242,20 @@ ul li a {
 .animals {
     background-image: url(img/animals.jpg);
 }
+
+/* SECTION SLIDER */
+
+.slider h1 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 15% 5%;
+}
+
+.sliderConteiner {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+}
