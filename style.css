@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 /* HEADER */
 
 header {
@@ -22,7 +26,6 @@ header {
     height: 95vh;
     background-color: rgba(0, 0, 0, 0.3);
     text-shadow: 3px 3px 3px black;
-    font-family: 'Cormorant Garamond', serif;
     text-align: center;
 }
 
@@ -75,6 +78,7 @@ nav {
     position: sticky;
     top: 0;
     height: 5vh;
+    z-index: 2;
 }
 
 .navbar {
@@ -109,6 +113,7 @@ nav {
     text-align: center;
     padding: 5% 5%;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
 }
 
 .menu ul {
@@ -119,6 +124,7 @@ nav {
     width: 70%;
     background-color: rgb(255, 255, 255);
     align-items: center;
+    z-index: 3;
 }
 
 .menu ul li {
@@ -145,7 +151,6 @@ ul li a {
 /* ABOUT SECTION */
 
 .about {
-    font-family: 'Cormorant Garamond', serif;
     text-align: center;
 }
 
@@ -158,4 +163,82 @@ ul li a {
 .about p {
     padding: 5% 10%;
     font-size: 18px;
+}
+
+/* SECTION WORKS */
+
+.works h1 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 15% 5%;
+}
+
+.worksWrapp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px
+}
+
+.worksItm {
+    height: 25vh;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.worksItm h1 {
+    font-size: 24px;
+    padding: 1%;
+}
+
+
+.bgimg {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 25vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bgimg h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    text-shadow: 3px 3px 5px black;
+    box-shadow: 2px 2px 15px black;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.nature {
+    background-image: url(img/nature.jpg);
+}
+
+.people {
+    background-image: url(img/people.jpg);
+}
+
+.wedding {
+    background-image: url(img/wedding.jpg);
+}
+
+.urban {
+    background-image: url(img/urban.jpg);
+}
+
+.architecture {
+    background-image: url(img/architecture.jpg);
+}
+
+.animals {
+    background-image: url(img/animals.jpg);
 }
