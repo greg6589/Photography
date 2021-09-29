@@ -259,3 +259,10 @@ ul li a {
     text-align: center;
     font-size: 22px;
 }
+
+/* SECTION VIDEO */
+
+
+.video video {
+    width: 100%;
+}
