@@ -141,3 +141,21 @@ ul li a {
 .active {
     display: block;
 }
+
+/* ABOUT SECTION */
+
+.about {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 15% 5%;
+}
+
+.about p {
+    padding: 5% 10%;
+    font-size: 18px;
+}
