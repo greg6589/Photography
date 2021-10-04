@@ -358,3 +358,10 @@ form p {
     font-size: 18px;
     font-family: 'Cormorant Garamond', serif;
 }
+
+/* SECTION FOOTER */
+
+footer {
+    text-align: center;
+    color: gray;
+}
