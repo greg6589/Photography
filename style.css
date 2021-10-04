@@ -291,3 +291,70 @@ ul li a {
     font-size: 30px;
     color: black
 }
+
+/* SECTION CONTACT */
+
+.contact h1 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 15% 5%;
+}
+
+.container {
+    background-image: url(img/contactbg.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5%;
+}
+
+#name {
+    width: 85%;
+    border: 1px rgb(226, 134, 134)solid;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#email {
+    width: 85%;
+    border: 1px rgb(226, 134, 134) solid;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#subject {
+    width: 85%;
+    border: 1px rgb(226, 134, 134) solid;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+form p {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.subBtn {
+    background-color: rgb(226, 134, 134);
+    border: 1px rgb(226, 134, 134) solid;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+}
