@@ -88,11 +88,18 @@ header {
     }
 }
 
+@media (min-width: 375px) and (min-height: 812px) and (orientation: portrait) {
+    .wrap h2 {
+        padding-top: 95%;
+    }
+}
+
 @media (min-width: 414px) and (orientation: portrait) {
     .wrap h2 {
         padding-top: 75%;
     }
 }
+
 
 /* NAVBAR */
 
