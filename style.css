@@ -326,6 +326,25 @@ ul li a {
     background-image: url(img/animals.jpg);
 }
 
+@media (min-width: 768px) and (orientation: portrait) {
+    .works h1 {
+        font-size: 40px;
+    }
+
+    .worksWrapp {
+        flex-direction: row;
+    }
+
+    .worksItm {
+        width: 49%;
+    }
+
+    .worksItm h1 {
+        font-size: 32px;
+    }
+
+}
+
 /* SECTION SLIDER */
 
 .slider h1 {
