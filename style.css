@@ -11,6 +11,17 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
+
+.underLine {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15%;
+    width: 50px;
+    height: 3px;
+    text-align: center;
+    background-color: rgb(226, 134, 134);
+}
+
 /* HEADER */
 
 header {
@@ -157,7 +168,7 @@ ul li a {
 .about h1 {
     font-size: 26px;
     text-transform: uppercase;
-    padding: 15% 5%;
+    padding: 15% 5% 3% 5%;
 }
 
 .about p {
@@ -171,8 +182,9 @@ ul li a {
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
-    padding: 15% 5%;
+    padding: 15% 5% 3% 5%;
 }
+
 
 .worksWrapp {
     display: flex;
@@ -249,7 +261,7 @@ ul li a {
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
-    padding: 15% 5%;
+    padding: 15% 5% 3% 5%;
 }
 
 .sliderConteiner {
@@ -273,7 +285,7 @@ ul li a {
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
-    padding: 15% 5%;
+    padding: 15% 5% 3% 5%;
 }
 
 .socials div {
@@ -298,7 +310,7 @@ ul li a {
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
-    padding: 15% 5%;
+    padding: 15% 5% 3% 5%;
 }
 
 .container {
