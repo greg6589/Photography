@@ -82,6 +82,12 @@ header {
     }
 }
 
+@media (min-width: 375px) and (orientation: portrait) {
+    .wrap h2 {
+        padding-top: 67%;
+    }
+}
+
 /* NAVBAR */
 
 
