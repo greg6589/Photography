@@ -352,6 +352,7 @@ ul li a {
     font-size: 26px;
     text-transform: uppercase;
     padding: 15% 5% 3% 5%;
+    margin: 0 auto;
 }
 
 .sliderConteiner {
@@ -360,6 +361,21 @@ ul li a {
     margin: 0 auto;
     text-align: center;
     font-size: 22px;
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .slider h1 {
+        font-size: 40px;
+        padding: 15% 5% 3% 5%;
+        width: 70%;
+    }
+
+    .sliderConteiner {
+        width: 70%;
+        height: 300px;
+        font-size: 30px;
+    }
+
 }
 
 /* SECTION VIDEO */
