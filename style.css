@@ -22,6 +22,15 @@ body {
     background-color: rgb(226, 134, 134);
 }
 
+@media (min-width: 768px) and (orientation: portrait) {
+    .underLine {
+        margin-bottom: 10%;
+        width: 100px;
+        height: 5px;
+    }
+}
+
+
 /* HEADER */
 
 header {
@@ -491,6 +500,49 @@ form p {
     padding: 10px 25px;
     font-size: 18px;
     font-family: 'Cormorant Garamond', serif;
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .contact h1 {
+        font-size: 40px;
+        padding: 15% 5% 3% 5%;
+    }
+
+    .container form {
+        padding: 5%;
+    }
+
+    #name {
+        width: 70%;
+        border: 2px rgb(226, 134, 134)solid;
+        padding: 10px 15px;
+        font-size: 22px;
+    }
+
+    #email {
+        width: 70%;
+        border: 2px rgb(226, 134, 134) solid;
+        padding: 10px 15px;
+        font-size: 22px;
+    }
+
+    #subject {
+        width: 70%;
+        border: 2px rgb(226, 134, 134) solid;
+        padding: 10px 15px;
+        font-size: 22px;
+
+    }
+
+    form p {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .subBtn {
+        padding: 15px 35px;
+        font-size: 26px;
+    }
 }
 
 /* SECTION FOOTER */
