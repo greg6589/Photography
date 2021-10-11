@@ -250,11 +250,25 @@ ul li a {
         width: 60%;
     }
 
-
     ul li a {
         font-size: 30px;
     }
+}
 
+@media (min-width: 1024px) and (orientation: portrait) {
+    .navbar a {
+        font-size: 46px;
+        padding-left: 40px;
+    }
+
+    .burger {
+        padding-right: 40px;
+        font-size: 46px;
+    }
+
+    ul li a {
+        font-size: 38px;
+    }
 }
 
 /* ABOUT SECTION */
