@@ -30,6 +30,13 @@ body {
     }
 }
 
+@media (min-width: 1024px) and (orientation: landscape) {
+    .underLine {
+        margin-bottom: 7%;
+        width: 120px;
+    }
+}
+
 
 /* HEADER */
 
@@ -157,6 +164,34 @@ header {
     }
 }
 
+@media (min-width: 1024px) and (orientation: landscape) {
+    .wrap p {
+        font-size: 32px;
+        padding: 0 10% 1% 10%;
+    }
+
+    .wrap h2 {
+        font-size: 48px;
+        padding-top: 30%;
+    }
+
+    .title {
+        padding: 2%;
+    }
+
+    .title h1 {
+        font-size: 70px;
+    }
+
+    .title p {
+        font-size: 40px;
+    }
+
+    .fa-arrow-down {
+        font-size: 40px;
+    }
+}
+
 
 /* NAVBAR */
 
@@ -271,6 +306,25 @@ ul li a {
     }
 }
 
+@media (min-width: 1024px) and (orientation: landscape) {
+    .navbar a {
+        font-size: 36px;
+    }
+
+    .burger {
+        padding-right: 20px;
+        font-size: 32px;
+    }
+
+    .menu ul {
+        width: 50%;
+    }
+
+    ul li a {
+        font-size: 28px;
+    }
+}
+
 /* ABOUT SECTION */
 
 .about {
@@ -298,6 +352,19 @@ ul li a {
     }
 }
 
+@media (min-width: 1024px) and (orientation: landscape) {
+    .about h1 {
+        font-size: 36px;
+        padding: 10% 5% 3% 5%;
+    }
+
+    .about p {
+        font-size: 28px;
+        padding: 5% 15%;
+    }
+
+}
+
 /* SECTION WORKS */
 
 .works h1 {
@@ -307,6 +374,16 @@ ul li a {
     padding: 15% 5% 3% 5%;
 }
 
+.worksContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 
 .worksWrapp {
     display: flex;
@@ -314,15 +391,15 @@ ul li a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    width: 90%;
 }
 
 .worksItm {
     height: 25vh;
-    width: 90%;
+    width: 100%;
     background-size: cover;
     background-position: center;
-
 }
 
 .worksItm h1 {
@@ -382,16 +459,44 @@ ul li a {
         font-size: 40px;
     }
 
-    .worksWrapp {
+    .worksItm h1 {
+        font-size: 32px;
+    }
+
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .worksContainer {
         flex-direction: row;
     }
 
-    .worksItm {
-        width: 49%;
+    .worksWrapp {
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .wedding {
+        height: 50vh;
+    }
+
+    .wedding .bgimg {
+        height: 50vh;
+    }
+
+    .urban {
+        height: 50vh;
+    }
+
+    .urban .bgimg {
+        height: 50vh;
+    }
+
+    .works h1 {
+        font-size: 36px;
     }
 
     .worksItm h1 {
-        font-size: 32px;
+        font-size: 26px;
     }
 
 }
@@ -427,6 +532,20 @@ ul li a {
         font-size: 30px;
     }
 
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .slider h1 {
+        font-size: 36px;
+        padding: 15% 5% 3% 5%;
+        width: 75%;
+    }
+
+    .sliderConteiner {
+        width: 70%;
+        height: 300px;
+        font-size: 28px;
+    }
 }
 
 /* SECTION VIDEO */
@@ -473,8 +592,20 @@ ul li a {
     .socials div a {
         font-size: 40px;
     }
+}
 
+@media (min-width: 1024px) and (orientation: landscape) {
+    .socials h1 {
+        font-size: 36px;
+    }
 
+    .socials div {
+        padding-bottom: 5%;
+    }
+
+    .socials div a {
+        font-size: 40px;
+    }
 }
 
 /* SECTION CONTACT */
@@ -578,6 +709,49 @@ form p {
 
     form p {
         font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .subBtn {
+        padding: 15px 35px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .contact h1 {
+        font-size: 36px;
+        padding: 15% 5% 3% 5%;
+    }
+
+    .container form {
+        padding: 5%;
+    }
+
+    #name {
+        width: 60%;
+        border: 2px rgb(226, 134, 134)solid;
+        padding: 10px 15px;
+        font-size: 24px;
+    }
+
+    #email {
+        width: 60%;
+        border: 2px rgb(226, 134, 134) solid;
+        padding: 10px 15px;
+        font-size: 24px;
+    }
+
+    #subject {
+        width: 60%;
+        border: 2px rgb(226, 134, 134) solid;
+        padding: 10px 15px;
+        font-size: 24px;
+
+    }
+
+    form p {
+        font-size: 22px;
         padding-bottom: 10px;
     }
 
