@@ -30,13 +30,18 @@ body {
     }
 }
 
+@media (min-width: 640px) and (orientation: landscape) {
+    .underLine {
+        margin-bottom: 5%;
+    }
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
     .underLine {
         margin-bottom: 7%;
         width: 120px;
     }
 }
-
 
 /* HEADER */
 
@@ -106,7 +111,7 @@ header {
 
 @media (min-width: 375px) and (min-height: 812px) and (orientation: portrait) {
     .wrap h2 {
-        padding-top: 95%;
+        padding-top: 105%;
     }
 }
 
@@ -133,7 +138,6 @@ header {
     .title p {
         font-size: 36px;
     }
-
 }
 
 @media (min-width: 1024px) and (orientation: portrait) {
@@ -164,6 +168,32 @@ header {
     }
 }
 
+@media (min-width: 640px) and (orientation: landscape) {
+    header {
+        height: 94vh;
+    }
+
+    .wrap {
+        height: 94vh;
+    }
+
+    .wrap h2 {
+        font-size: 30px;
+        padding-top: 7%;
+    }
+
+    .title {
+        padding: 5%;
+    }
+
+
+    .fa-arrow-down {
+        font-size: 30px;
+        padding-top: 10px;
+        animation: arrowMove 1s ease 5s infinite;
+    }
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
     .wrap p {
         font-size: 32px;
@@ -191,6 +221,7 @@ header {
         font-size: 40px;
     }
 }
+
 
 
 /* NAVBAR */
@@ -306,6 +337,29 @@ ul li a {
     }
 }
 
+@media (min-width: 640px) and (orientation: landscape) {
+    nav {
+        height: 6vh;
+    }
+
+    .navbar {
+        height: 6vh;
+    }
+
+    .menu ul {
+        width: 50%;
+    }
+
+    .menu ul li {
+        padding: 5%;
+    }
+
+    ul li a {
+        font-size: 20px;
+    }
+
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
     .navbar a {
         font-size: 36px;
@@ -324,6 +378,8 @@ ul li a {
         font-size: 28px;
     }
 }
+
+
 
 /* ABOUT SECTION */
 
@@ -352,6 +408,18 @@ ul li a {
     }
 }
 
+@media (min-width: 640px) and (orientation: landscape) {
+    .about h1 {
+        font-size: 26px;
+        padding: 10% 5% 3% 5%;
+    }
+
+    .about p {
+        padding: 5% 10%;
+        font-size: 18px;
+    }
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
     .about h1 {
         font-size: 36px;
@@ -364,6 +432,7 @@ ul li a {
     }
 
 }
+
 
 /* SECTION WORKS */
 
@@ -462,6 +531,49 @@ ul li a {
     .worksItm h1 {
         font-size: 32px;
     }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    .works h1 {
+        padding: 10% 5% 3% 5%;
+    }
+
+    .worksContainer {
+        flex-direction: row;
+    }
+
+    .worksWrapp {
+        width: 47%;
+    }
+
+    .worksItm {
+        height: 30vh;
+    }
+
+    .worksItm h1 {
+        font-size: 20px;
+        padding: 3%;
+    }
+
+    .bgimg {
+        height: 30vh;
+    }
+
+    .wedding {
+        height: 50vh;
+    }
+
+    .wedding .bgimg {
+        height: 50vh;
+    }
+
+    .urban {
+        height: 50vh;
+    }
+
+    .urban .bgimg {
+        height: 50vh;
+    }
 
 }
 
@@ -531,7 +643,13 @@ ul li a {
         height: 300px;
         font-size: 30px;
     }
+}
 
+@media (min-width: 640px) and (orientation: landscape) {
+    .sliderConteiner {
+        width: 70%;
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -591,6 +709,21 @@ ul li a {
 
     .socials div a {
         font-size: 40px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    .socials h1 {
+        padding: 20% 5% 3% 5%;
+    }
+
+    .socials div {
+        width: 60%;
+    }
+
+    .socials div a {
+        font-size: 26px;
+
     }
 }
 
@@ -704,7 +837,6 @@ form p {
         border: 2px rgb(226, 134, 134) solid;
         padding: 10px 15px;
         font-size: 22px;
-
     }
 
     form p {
@@ -715,6 +847,24 @@ form p {
     .subBtn {
         padding: 15px 35px;
         font-size: 26px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    .contact h1 {
+        padding: 5% 5% 3% 5%;
+    }
+
+    #name {
+        width: 70%;
+    }
+
+    #email {
+        width: 70%;
+    }
+
+    #subject {
+        width: 70%;
     }
 }
 
