@@ -253,7 +253,11 @@ header {
     }
 }
 
-
+@media (min-width: 1440px) and (orientation: landscape) {
+    .wrap h2 {
+        padding-top: 27%;
+    }
+}
 
 /* NAVBAR */
 
@@ -388,7 +392,6 @@ ul li a {
     ul li a {
         font-size: 20px;
     }
-
 }
 
 @media (min-width: 660px) and (orientation: landscape) {
@@ -417,6 +420,58 @@ ul li a {
 
     ul li a {
         font-size: 28px;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    .burger {
+        display: none;
+    }
+
+    nav {
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar {
+        height: 7vh;
+    }
+
+    .menu {
+        display: block;
+        width: 60%;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 7vh;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        padding: 0;
+        height: 7vh;
+    }
+
+    .menu ul li {
+        padding: 0;
+    }
+
+    ul li a:hover {
+        color: rgb(226, 134, 134);
     }
 }
 
