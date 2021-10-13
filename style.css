@@ -198,6 +198,33 @@ header {
     }
 }
 
+@media (min-width: 660px) and (orientation: landscape) {
+    header {
+        height: 93vh;
+    }
+
+    .wrap {
+        height: 93vh;
+    }
+
+    .wrap h2 {
+        font-size: 30px;
+        padding-top: 7%;
+    }
+
+    .title {
+        padding: 5%;
+    }
+
+
+    .fa-arrow-down {
+        font-size: 30px;
+        padding-top: 10px;
+        animation: arrowMove 1s ease 5s infinite;
+    }
+}
+
+
 @media (min-width: 1024px) and (orientation: landscape) {
     .wrap p {
         font-size: 32px;
@@ -362,6 +389,16 @@ ul li a {
         font-size: 20px;
     }
 
+}
+
+@media (min-width: 660px) and (orientation: landscape) {
+    nav {
+        height: 7vh;
+    }
+
+    .navbar {
+        height: 7vh;
+    }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
