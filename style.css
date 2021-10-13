@@ -526,9 +526,7 @@ ul li a {
         font-size: 28px;
         padding: 5% 15%;
     }
-
 }
-
 
 /* SECTION WORKS */
 
@@ -706,7 +704,21 @@ ul li a {
     .worksItm h1 {
         font-size: 26px;
     }
+}
 
+@media (min-width: 1440px) and (orientation: landscape) {
+    .left {
+        width: 55%;
+    }
+
+    .right {
+        width: 35%;
+    }
+
+    .bgimg:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+    }
 }
 
 /* SECTION SLIDER */
