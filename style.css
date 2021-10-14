@@ -47,6 +47,13 @@ html {
     }
 }
 
+@media (min-width: 1600px) and (orientation: landscape) {
+    .underLine {
+        margin-bottom: 5%;
+        width: 100px;
+    }
+}
+
 /* HEADER */
 
 header {
@@ -190,7 +197,6 @@ header {
         padding: 5%;
     }
 
-
     .fa-arrow-down {
         font-size: 30px;
         padding-top: 10px;
@@ -223,7 +229,6 @@ header {
         animation: arrowMove 1s ease 5s infinite;
     }
 }
-
 
 @media (min-width: 1024px) and (orientation: landscape) {
     .wrap p {
@@ -259,6 +264,29 @@ header {
     }
 }
 
+@media (min-width: 1600px) and (orientation: landscape) {
+    header {
+        height: 95vh;
+    }
+
+    .wrap {
+        height: 95vh;
+    }
+
+    .wrap p {
+        font-size: 28px;
+    }
+
+    .wrap h2 {
+        font-size: 40px;
+        padding-top: 25%;
+    }
+
+    .fa-arrow-down {
+        font-size: 30px;
+    }
+}
+
 /* NAVBAR */
 
 
@@ -267,6 +295,7 @@ nav {
     top: 0;
     height: 5vh;
     z-index: 2;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -485,10 +514,31 @@ ul li a {
 
     ul li:hover a::before {
         opacity: 1;
-        color: red;
         left: 50%;
         transform: translate(-50%, 0%);
         transition: 0.2s;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    nav {
+        height: 5vh;
+    }
+
+    .navbar {
+        height: 5vh;
+    }
+
+    .menu {
+        height: 5vh;
+    }
+
+    .menu ul {
+        height: 5vh;
+    }
+
+    ul li a::before {
+        bottom: -2px;
     }
 }
 
@@ -543,6 +593,18 @@ ul li a {
     }
 }
 
+@media (min-width: 1600px) and (orientation: landscape) {
+    .about h1 {
+        font-size: 32px;
+        padding: 10% 5% 1% 5%;
+    }
+
+    .about p {
+        font-size: 24px;
+        padding: 5% 20%;
+    }
+}
+
 /* SECTION WORKS */
 
 .works h1 {
@@ -584,7 +646,6 @@ ul li a {
     font-size: 24px;
     padding: 1%;
 }
-
 
 .bgimg {
     position: relative;
@@ -736,6 +797,76 @@ ul li a {
     }
 }
 
+@media (min-width: 1600px) and (orientation: landscape) {
+    .worksContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .worksWrapp {
+        width: 49%;
+    }
+
+    .nature {
+        height: 30vh;
+    }
+
+    .nature .bgimg {
+        height: 30vh;
+    }
+
+    .people {
+        height: 50vh;
+    }
+
+    .people .bgimg {
+        height: 50vh;
+    }
+
+    .wedding {
+        height: 40vh;
+    }
+
+    .wedding .bgimg {
+        height: 40vh;
+    }
+
+    .urban {
+        height: 40vh
+    }
+
+    .urban .bgimg {
+        height: 40vh;
+    }
+
+    .architecture {
+        height: 50vh
+    }
+
+    .architecture .bgimg {
+        height: 50vh;
+    }
+
+    .animals {
+        height: 30vh;
+    }
+
+    .animals .bgimg {
+        height: 30vh;
+    }
+
+    .works h1 {
+        font-size: 32px;
+        padding: 10% 5% 1% 5%;
+    }
+
+    .worksItm h1 {
+        font-size: 26px;
+        padding: 5%;
+    }
+
+}
+
 /* SECTION SLIDER */
 
 .slider h1 {
@@ -786,6 +917,18 @@ ul li a {
         width: 70%;
         height: 300px;
         font-size: 28px;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    .slider h1 {
+        font-size: 32px;
+        padding: 10% 5% 1% 5%;
+    }
+
+    .sliderConteiner {
+        height: 100px;
+        font-size: 24px;
     }
 }
 
@@ -872,9 +1015,9 @@ ul li a {
 
 @media (min-width: 1440px) and (orientation: landscape) {
     .socials div a {
-        padding: 2%;
         width: 80px;
         height: 80px;
+        line-height: 80px;
         text-align: center;
         vertical-align: center;
         border: 3px solid white;
@@ -885,6 +1028,30 @@ ul li a {
         color: white;
         box-shadow: 0px 0px 0px 3px rgb(226, 134, 134);
         background-color: rgb(226, 134, 134);
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    .socials h1 {
+        font-size: 32px;
+        padding: 10% 10% 1% 10%;
+    }
+
+    .socials div {
+        width: 30%;
+    }
+
+    .socials div a {
+        padding: 0;
+        font-size: 30px;
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+        border: 2px solid white;
+    }
+
+    .socials div a:hover {
+        box-shadow: 0px 0px 0px 2px rgb(226, 134, 134);
     }
 }
 
@@ -1061,6 +1228,37 @@ form p {
 @media (min-width: 1440px) and (orientation: landscape) {
     .contact h1 {
         padding: 10% 5% 3% 5%;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    .contact h1 {
+        font-size: 32px;
+        padding: 5% 5% 1% 5%;
+    }
+
+    #name {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    #email {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    #subject {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    form p {
+        font-size: 16px;
+    }
+
+    .subBtn {
+        padding: 10px 30px;
+        font-size: 24px;
     }
 }
 
