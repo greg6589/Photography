@@ -468,14 +468,29 @@ ul li a {
 
     .menu ul li {
         padding: 0;
+        position: relative;
     }
 
-    ul li a:hover {
-        color: rgb(226, 134, 134);
+    ul li a::before {
+        opacity: 0;
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: rgb(226, 134, 134);
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transform: translate(-50%, 0%);
+    }
+
+    ul li:hover a::before {
+        opacity: 1;
+        color: red;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        transition: 0.2s;
     }
 }
-
-
 
 /* ABOUT SECTION */
 
@@ -856,7 +871,6 @@ ul li a {
 }
 
 @media (min-width: 1440px) and (orientation: landscape) {
-
     .socials div a {
         padding: 2%;
         width: 80px;
@@ -1041,6 +1055,12 @@ form p {
     .subBtn {
         padding: 15px 35px;
         font-size: 26px;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    .contact h1 {
+        padding: 10% 5% 3% 5%;
     }
 }
 
