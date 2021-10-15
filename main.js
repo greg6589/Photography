@@ -27,5 +27,37 @@ const changeSlide = () => {
     }
     slide.textContent = slideList[active].text;
    }
-   let indexInterval = setInterval(changeSlide, time)
+let indexInterval = setInterval(changeSlide, time)
 
+
+let userName=document.querySelector('.name');
+let mail=document.querySelector('.email');
+let sendAlert=document.querySelector('.messageAlert');
+let closeBtn=document.querySelector('.messageAlert button');
+let body=document.querySelector('body');
+const sendBtn=document.querySelector('.subBtn');
+
+
+// form input value verification
+
+sendBtn.addEventListener('click', function(){
+    if (userName.value == "" ){
+       alert('Enter your name please.')
+    }
+    if(mail.value == ""){
+        alert('Enter your email please.')
+    }
+    else{
+        sendAlert.classList.add('alertActive');
+        body.classList.add('stopScrolling');
+   }
+})
+
+// form reset and disable message alert
+
+closeBtn.addEventListener('click', function(){
+    sendAlert.classList.remove('alertActive');
+    body.classList.remove('stopScrolling');
+    userName.value ="";
+    mail.value = "";
+})

@@ -11,6 +11,11 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
+.stopScrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth
 }
@@ -1057,6 +1062,51 @@ ul li a {
 
 /* SECTION CONTACT */
 
+.contact {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.messageAlert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 60%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5%;
+    z-index: 5;
+    padding: 5% 10%;
+    text-align: center;
+    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.alertActive {
+    display: block;
+}
+
+.messageAlert p {
+    font-size: 24px;
+}
+
+.messageAlert button {
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: rgb(226, 134, 134);
+    border: 1px solid rgb(226, 134, 134);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+
 .contact h1 {
     text-align: center;
     font-size: 26px;
@@ -1082,7 +1132,7 @@ ul li a {
     padding: 5%;
 }
 
-#name {
+.name {
     width: 85%;
     border: 1px rgb(226, 134, 134)solid;
     padding: 10px 15px;
@@ -1090,7 +1140,7 @@ ul li a {
     font-family: 'Cormorant Garamond', serif;
 }
 
-#email {
+.email {
     width: 85%;
     border: 1px rgb(226, 134, 134) solid;
     padding: 10px 15px;
@@ -1098,7 +1148,7 @@ ul li a {
     font-family: 'Cormorant Garamond', serif;
 }
 
-#subject {
+.subject {
     width: 85%;
     border: 1px rgb(226, 134, 134) solid;
     padding: 10px 15px;
@@ -1120,6 +1170,8 @@ form p {
     padding: 10px 25px;
     font-size: 18px;
     font-family: 'Cormorant Garamond', serif;
+    cursor: pointer;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
@@ -1132,21 +1184,21 @@ form p {
         padding: 5%;
     }
 
-    #name {
+    .name {
         width: 70%;
         border: 2px rgb(226, 134, 134)solid;
         padding: 10px 15px;
         font-size: 22px;
     }
 
-    #email {
+    .email {
         width: 70%;
         border: 2px rgb(226, 134, 134) solid;
         padding: 10px 15px;
         font-size: 22px;
     }
 
-    #subject {
+    .subject {
         width: 70%;
         border: 2px rgb(226, 134, 134) solid;
         padding: 10px 15px;
@@ -1169,15 +1221,15 @@ form p {
         padding: 5% 5% 3% 5%;
     }
 
-    #name {
+    .name {
         width: 70%;
     }
 
-    #email {
+    .email {
         width: 70%;
     }
 
-    #subject {
+    .subject {
         width: 70%;
     }
 }
@@ -1192,21 +1244,21 @@ form p {
         padding: 5%;
     }
 
-    #name {
+    .name {
         width: 60%;
         border: 2px rgb(226, 134, 134)solid;
         padding: 10px 15px;
         font-size: 24px;
     }
 
-    #email {
+    .email {
         width: 60%;
         border: 2px rgb(226, 134, 134) solid;
         padding: 10px 15px;
         font-size: 24px;
     }
 
-    #subject {
+    .subject {
         width: 60%;
         border: 2px rgb(226, 134, 134) solid;
         padding: 10px 15px;
@@ -1237,17 +1289,17 @@ form p {
         padding: 5% 5% 1% 5%;
     }
 
-    #name {
+    .name {
         width: 50%;
         font-size: 18px;
     }
 
-    #email {
+    .email {
         width: 50%;
         font-size: 18px;
     }
 
-    #subject {
+    .subject {
         width: 50%;
         font-size: 18px;
     }

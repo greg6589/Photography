@@ -119,15 +119,20 @@
         </div>
     </section>
     <section id="contactScroll" class="contact">
+        <div class="messageAlert">
+            <p>Thank you for your message!</p>
+            <p>I will contact you as soon as possible!</p>
+            <button>close</button>
+        </div>
         <h1>contact me</h1>
         <span class="underLine"></span>
         <div class="container">
             <form>
-                <input type="text" id="name" name="name" placeholder="Your Name*">
-                <input type="text" id="email" name="email" placeholder="Your E-mail address*">
-                <textarea id="subject" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
+                <input class="name" type="text" name="name" placeholder="Your Name*">
+                <input class="email" type="text" name="email" placeholder="Your E-mail address*">
+                <textarea class="subject" name="subject" placeholder="Your Message.." style="height:200px"></textarea>
                 <p>All fields marked with an asterisk (*) are required</p>
-                <input class="subBtn" type="submit" value="send">
+                <input class="subBtn" type="button" value="send">
             </form>
         </div>
     </section>
