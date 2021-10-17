@@ -114,5 +114,6 @@ closeGallery.addEventListener('click', function(){
     img.setAttribute('src', ``);
     index=1
     previous.style.display="none"
+    next.style.display="block";
 })
 
