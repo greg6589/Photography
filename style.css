@@ -897,7 +897,6 @@ ul li a {
     transform: translate(0%, -50%);
     height: auto;
     width: 100vw;
-    max-height: 80vh;
     background-color: white;
 }
 
@@ -908,12 +907,12 @@ ul li a {
 
 .gallery img {
     width: 100%;
-    flex-basis: 100%;
     margin-bottom: 5px;
 }
 
 .gallery button {
     margin-right: 10px;
+    color: white;
     background-color: rgb(226, 134, 134);
     border: 1px solid rgb(226, 134, 134);
 
@@ -924,6 +923,7 @@ ul li a {
     padding: 0 5px;
     font-size: 20px;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 i.fas.fa-chevron-left {
@@ -935,6 +935,7 @@ i.fas.fa-chevron-left {
     left: 0;
     transform: translate(0%, -50%);
     padding: 10px;
+    cursor: pointer;
 }
 
 i.fas.fa-chevron-right {
@@ -946,7 +947,54 @@ i.fas.fa-chevron-right {
     right: 0;
     transform: translate(0%, -50%);
     padding: 10px;
+    cursor: pointer;
 }
+
+@media (orientation: landscape) {
+    .gallery {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (orientation: landscape) {
+    .gallery {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .gallery {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+
+    .gallery {
+        width: 50%;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
 
 /* SECTION SLIDER */
 
