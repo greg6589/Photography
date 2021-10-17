@@ -61,3 +61,58 @@ closeBtn.addEventListener('click', function(){
     userName.value ="";
     mail.value = "";
 })
+
+// Gallery
+
+let gallery=document.querySelector('.galleryWrap');
+let imgNumber=document.querySelector('.number');
+let closeGallery=document.querySelector('.closeGallery');
+let img=document.querySelector('.gallery img');
+let galleryMiniArray=document.querySelectorAll('.worksItm h1');
+let previous=document.querySelector('.fa-chevron-left')
+let next=document.querySelector('.fa-chevron-right')
+
+let index=1;
+let activeElm="";
+const openGallery = (elem) => {
+            activeElm=elem.textContent;
+            gallery.style.opacity="1";
+            gallery.style.zIndex="4";
+            imgNumber.textContent=index;
+            img.setAttribute('src', `img/${activeElm}${index}.jpg`);
+}
+
+galleryMiniArray.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+        openGallery(elem)
+    });
+});
+
+next.addEventListener('click', function(){
+       index++;
+       imgNumber.textContent=index;
+       img.setAttribute('src', `img/${activeElm}${index}.jpg`);
+       previous.style.display="block";
+       if(index==5){
+        next.style.display="none"
+       }
+})
+
+previous.addEventListener('click', function(){
+         --index;
+         imgNumber.textContent=index;
+         img.setAttribute('src', `img/${activeElm}${index}.jpg`);
+         next.style.display="block";
+        if(index == "1"){
+             previous.style.display="none"
+          }
+})
+
+closeGallery.addEventListener('click', function(){
+    gallery.style.opacity="0";
+    gallery.style.zIndex="-4";
+    img.setAttribute('src', ``);
+    index=1
+    previous.style.display="none"
+})
+
