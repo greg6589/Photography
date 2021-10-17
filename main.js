@@ -33,34 +33,42 @@ let indexInterval = setInterval(changeSlide, time)
 let userName=document.querySelector('.name');
 let mail=document.querySelector('.email');
 let sendAlert=document.querySelector('.messageAlert');
-let closeBtn=document.querySelector('.messageAlert button');
+let closeBtn=document.querySelectorAll('.messageAlert button');
 let body=document.querySelector('body');
 const sendBtn=document.querySelector('.subBtn');
+let emptyValue=document.querySelector('.emptyValue');
 
 
-// form input value verification
+// form input value verification and reset
 
 sendBtn.addEventListener('click', function(){
-    if (userName.value == "" ){
-       alert('Enter your name please.')
-    }
-    if(mail.value == ""){
-        alert('Enter your email please.')
+    if (userName.value == "" || mail.value == "" ){
+    emptyValue.classList.add('alertActive');
     }
     else{
         sendAlert.classList.add('alertActive');
         body.classList.add('stopScrolling');
+        userName.value ="";
+        mail.value = "";
    }
 })
 
-// form reset and disable message alert
+// disable form  message alert
 
-closeBtn.addEventListener('click', function(){
-    sendAlert.classList.remove('alertActive');
-    body.classList.remove('stopScrolling');
-    userName.value ="";
-    mail.value = "";
+closeBtn.forEach(function(e){
+    e.addEventListener("click", function(){
+        sendAlert.classList.remove('alertActive');
+        emptyValue.classList.remove('alertActive');
+        body.classList.remove('stopScrolling');
+    })
 })
+
+// closeBtn.addEventListener('click', function(){
+//     sendAlert.classList.remove('alertActive');
+//     body.classList.remove('stopScrolling');
+//     userName.value ="";
+//     mail.value = "";
+// })
 
 // Gallery
 
