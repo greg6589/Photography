@@ -84,7 +84,8 @@ const openGallery = (elem) => {
 
 galleryMiniArray.forEach(function(elem) {
     elem.addEventListener("click", function() {
-        openGallery(elem)
+        openGallery(elem);
+        body.classList.add('stopScrolling');
     });
 });
 
@@ -115,5 +116,6 @@ closeGallery.addEventListener('click', function(){
     index=1
     previous.style.display="none"
     next.style.display="block";
+    body.classList.remove('stopScrolling');
 })
 
