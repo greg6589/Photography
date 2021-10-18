@@ -3,10 +3,12 @@ const menu= document.querySelector(".menu");
 
 burger.addEventListener("click", function(){
     menu.classList.toggle("active");
+    body.classList.add("stopScrolling")
 } )
 
 menu.addEventListener("click", function(){
     menu.classList.toggle("active");
+    body.classList.remove("stopScrolling")
 })
 
 const slideList=[
@@ -16,7 +18,7 @@ const slideList=[
 ]
 
 const slide= document.querySelector('.slide')
-const time = 5000;
+const time = 2000;
 let active = 0;
 
 
@@ -62,13 +64,6 @@ closeBtn.forEach(function(e){
         body.classList.remove('stopScrolling');
     })
 })
-
-// closeBtn.addEventListener('click', function(){
-//     sendAlert.classList.remove('alertActive');
-//     body.classList.remove('stopScrolling');
-//     userName.value ="";
-//     mail.value = "";
-// })
 
 // Gallery
 
