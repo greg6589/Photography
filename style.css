@@ -63,11 +63,11 @@ html {
 
 header {
     position: relative;
+    height: 95vh;
     background-image: url(img/header.jpg);
     background-position: center;
     background-size: cover;
     color: white;
-    height: 95vh;
 }
 
 .wrap {
@@ -79,6 +79,7 @@ header {
 
 .wrap p {
     font-size: 20px;
+    padding: 0 1%;
 }
 
 .wrap h2 {
@@ -308,12 +309,12 @@ nav {
 }
 
 .navbar a {
-    color: black;
     align-self: center;
-    font-family: 'Ephesis', cursive;
-    font-size: 26px;
     padding-left: 10px;
+    font-size: 26px;
     text-decoration: none;
+    font-family: 'Ephesis', cursive;
+    color: black;
 }
 
 .burger {
@@ -348,19 +349,19 @@ nav {
 
 .menu ul li {
     width: 100%;
-    list-style-type: none;
     padding: 10%;
+    list-style-type: none;
 }
 
 ul li a {
     display: block;
     padding: 2px;
-    color: rgb(53, 53, 53);
-    line-height: 100%;
     font-size: 16px;
+    line-height: 100%;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
+    color: rgb(53, 53, 53);
 }
 
 .active {
@@ -474,11 +475,11 @@ ul li a {
     .menu {
         display: block;
         width: 60%;
+        height: 7vh;
         position: relative;
         left: 0;
         right: 0;
         top: 0;
-        height: 7vh;
         padding: 0;
         background-color: rgb(255, 255, 255);
     }
@@ -491,15 +492,14 @@ ul li a {
         position: static;
         top: 0;
         left: 0;
-        transform: translate(0, 0);
         width: 100%;
-        padding: 0;
         height: 7vh;
+        padding: 0;
     }
 
     .menu ul li {
-        padding: 0;
         position: relative;
+        padding: 0;
     }
 
     ul li a::before {
@@ -507,11 +507,11 @@ ul li a {
         content: "";
         width: 80px;
         height: 3px;
-        background-color: var(--rosa-details-color);
         position: absolute;
         bottom: -5px;
         left: 0;
         transform: translate(-50%, 0%);
+        background-color: var(--rosa-details-color);
     }
 
     ul li:hover a::before {
@@ -920,25 +920,25 @@ ul li a {
 
 .fas.fa-chevron-left {
     display: none;
-    font-size: 40px;
-    color: white;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(0%, -50%);
     padding: 10px;
+    font-size: 40px;
+    color: white;
     cursor: pointer;
 }
 
 .fas.fa-chevron-right {
     display: block;
-    font-size: 40px;
-    color: white;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(0%, -50%);
     padding: 10px;
+    font-size: 40px;
+    color: white;
     cursor: pointer;
 }
 
@@ -987,11 +987,12 @@ ul li a {
 
 /* SECTION SLIDER */
 .slider h1 {
-    text-align: center;
-    font-size: 26px;
-    text-transform: uppercase;
-    padding: 15% 5% 3% 5%;
     margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 15% 5% 3% 5%;
+
 }
 
 .sliderConteiner {
@@ -1004,9 +1005,10 @@ ul li a {
 
 @media (min-width: 768px) and (orientation: portrait) {
     .slider h1 {
+        width: 70%;
         font-size: 40px;
         padding: 15% 5% 3% 5%;
-        width: 70%;
+
     }
 
     .sliderConteiner {
@@ -1025,9 +1027,9 @@ ul li a {
 
 @media (min-width: 1024px) and (orientation: landscape) {
     .slider h1 {
+        width: 75%;
         font-size: 36px;
         padding: 15% 5% 3% 5%;
-        width: 75%;
     }
 
     .sliderConteiner {
@@ -1064,8 +1066,8 @@ ul li a {
 
 .socials h1 {
     text-align: center;
-    font-size: 26px;
     text-transform: uppercase;
+    font-size: 26px;
     padding: 15% 5% 3% 5%;
 }
 
@@ -1157,11 +1159,11 @@ ul li a {
     }
 
     .socials div a {
+        width: 60px;
+        height: 60px;
         padding: 0;
         font-size: 30px;
         line-height: 60px;
-        width: 60px;
-        height: 60px;
         border: 2px solid white;
     }
 
@@ -1184,15 +1186,14 @@ ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
     width: 60%;
-    background-color: white;
+    text-align: center;
+    padding: 5% 10%;
+    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid white;
     border-radius: 5%;
+    background-color: white;
     z-index: 5;
-    padding: 5% 10%;
-    text-align: center;
-    box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.4);
 }
 
 .alertActive {
@@ -1206,19 +1207,19 @@ ul li a {
 .messageAlert button {
     margin: 0 auto;
     margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     padding: 5px 10px;
     background-color: var(--rosa-details-color);
     border: 1px solid var(--rosa-details-color);
     color: white;
-    text-transform: uppercase;
-    font-family: 'Cormorant Garamond', serif;
 }
 
 .contact h1 {
     text-align: center;
-    font-size: 26px;
     text-transform: uppercase;
+    font-size: 26px;
     padding: 15% 5% 3% 5%;
 }
 
