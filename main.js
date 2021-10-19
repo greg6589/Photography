@@ -44,7 +44,7 @@ let emptyValue=document.querySelector('.emptyValue');
 // form input value verification and reset
 
 sendBtn.addEventListener('click', function(){
-    if (userName.value == "" || mail.value == "" ){
+    if (userName.value === "" || mail.value === "" ){
     emptyValueAlert.classList.add('alertActive');
     }
     else{
@@ -97,7 +97,7 @@ nextPhoto.addEventListener('click', function(){
        imgNumber.textContent=activPhotoindex;
        img.setAttribute('src', `img/${activeCategory}${activPhotoindex}.jpg`);
        previousPhoto.style.display="block";
-       if(activPhotoindex==5){
+       if(activPhotoindex === 5){
         nextPhoto.style.display="none"
        }
 })
@@ -107,7 +107,7 @@ previousPhoto.addEventListener('click', function(){
          imgNumber.textContent=activPhotoindex;
          img.setAttribute('src', `img/${activeCategory}${activPhotoindex}.jpg`);
          nextPhoto.style.display="block";
-        if(activPhotoindex == "1"){
+        if(activPhotoindex === "1"){
              previousPhoto.style.display="none"
           }
 })
