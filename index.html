@@ -30,15 +30,15 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#aboutScroll">about me</a></li>
-                <li><a href="#worksScroll">works</a></li>
-                <li><a href="#socialsScroll">follow me</a></li>
-                <li><a href="#contactScroll">contact me</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#socials">follow me</a></li>
+                <li><a href="#contact">contact me</a></li>
 
             </ul>
         </div>
     </nav>
-    <section id="aboutScroll" class="about">
+    <section id="about" class="about">
         <h1>a little bit about me</h1>
         <span class="underLine"></span>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quos, officia quae aspernatur, consectetur
@@ -46,7 +46,7 @@
             Consectetur doloremque aliquid distinctio delectus suscipit. Numquam nobis ab minus iusto, voluptatibus
             dolores nihil sunt voluptate? Iste modi explicabo quisquam excepturi!</p>
     </section>
-    <section id="worksScroll" class="works">
+    <section id="works" class="works">
         <h1>works</h1>
         <span class="underLine"></span>
         <div class="worksContainer">
@@ -110,21 +110,18 @@
             <video src="img/video.mp4" muted loop autoplay></video>
         </div>
     </section>
-    <section id="socialsScroll" class="socials">
+    <section id="socials" class="socials">
         <h1>follow me</h1>
         <span class="underLine"></span>
         <div>
-            <a href="https://www.facebook.com"> <span class="fab fa-facebook-f" data-icon="facebook icon"
-                    aria-hidden="true"></span></a>
-            <a href="https://www.pinterest.com"><span class="fab fa-pinterest-p" data-icon="pinterest icon"
-                    aria-hidden="true"></span></a>
-            <a href="https://instagram.com/"><span class="fab fa-instagram" data-icon="instagram icon"
-                    aria-hidden="true"></span></a>
-            <a href="https://twitter.com/">
+            <a href=""> <span class="fab fa-facebook-f" data-icon="facebook icon" aria-hidden="true"></span></a>
+            <a href=""><span class="fab fa-pinterest-p" data-icon="pinterest icon" aria-hidden="true"></span></a>
+            <a href=""><span class="fab fa-instagram" data-icon="instagram icon" aria-hidden="true"></span></a>
+            <a href="">
                 <span class="fab fa-twitter" data-icon="twitter" aria-hidden="twitter icon"></span></a>
         </div>
     </section>
-    <section id="contactScroll" class="contact">
+    <section id="contact" class="contact">
         <div class="messageAlert">
             <p>Thank you for your message!</p>
             <p>I will contact you as soon as possible!</p>
@@ -139,8 +136,11 @@
         <span class="underLine"></span>
         <div class="container">
             <form>
+                <label for="name">Your Name*</label>
                 <input class="name" type="text" name="name" placeholder="Your Name*">
+                <label for="email">Your E-mail address*</label>
                 <input class="email" type="text" name="email" placeholder="Your E-mail address*">
+                <label for="subject">Your Message:</label>
                 <textarea class="subject" name="subject" placeholder="Your Message.."></textarea>
                 <p>All fields marked with an asterisk (*) are required</p>
                 <input class="subBtn" type="button" value="send">
