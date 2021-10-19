@@ -100,26 +100,6 @@ header {
     font-size: 26px;
 }
 
-.fa-arrow-down {
-    font-size: 30px;
-    padding-top: 10px;
-    animation: arrowMove 1s ease 5s infinite;
-}
-
-@keyframes arrowMove {
-    0% {
-        padding-top: 10px;
-    }
-
-    50% {
-        padding-top: 20px;
-    }
-
-    100% {
-        padding-top: 10px;
-    }
-}
-
 @media (min-width: 375px) and (orientation: portrait) {
     .wrap h2 {
         padding-top: 67%;
@@ -180,9 +160,6 @@ header {
         font-size: 50px;
     }
 
-    .fa-arrow-down {
-        font-size: 46px;
-    }
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
@@ -201,12 +178,6 @@ header {
 
     .title {
         padding: 5%;
-    }
-
-    .fa-arrow-down {
-        font-size: 30px;
-        padding-top: 10px;
-        animation: arrowMove 1s ease 5s infinite;
     }
 }
 
@@ -228,11 +199,6 @@ header {
         padding: 5%;
     }
 
-    .fa-arrow-down {
-        font-size: 30px;
-        padding-top: 10px;
-        animation: arrowMove 1s ease 5s infinite;
-    }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -258,9 +224,6 @@ header {
         font-size: 40px;
     }
 
-    .fa-arrow-down {
-        font-size: 40px;
-    }
 }
 
 @media (min-width: 1440px) and (orientation: landscape) {
@@ -287,9 +250,6 @@ header {
         padding-top: 25%;
     }
 
-    .fa-arrow-down {
-        font-size: 30px;
-    }
 }
 
 /* NAVBAR */

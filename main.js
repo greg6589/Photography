@@ -18,7 +18,7 @@ const slideList=[
 ]
 
 const slide= document.querySelector('.slide')
-const time = 2000;
+const time = 5000;
 let active = 0;
 
 
