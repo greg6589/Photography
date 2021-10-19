@@ -18,25 +18,25 @@ const slideList=[
 ]
 
 const slide= document.querySelector('.slide')
-const time = 5000;
-let active = 0;
+const slideDisplayTime = 5000;
+let activeSlideIndex = 0;
 
 
-const changeSlide = () => {
-    active++;
-    if (active === slideList.length) {
-     active = 0;
+function changeSlide() {
+    activeSlideIndex++;
+    if (activeSlideIndex === slideList.length) {
+        activeSlideIndex = 0;
     }
-    slide.textContent = slideList[active].text;
-   }
-let indexInterval = setInterval(changeSlide, time)
+    slide.textContent = slideList[activeSlideIndex].text;
+}
+let indexInterval = setInterval(changeSlide, slideDisplayTime)
 
 
-let userName=document.querySelector('.name');
-let mail=document.querySelector('.email');
-let sendAlert=document.querySelector('.messageAlert');
-let closeBtn=document.querySelectorAll('.messageAlert button');
-let body=document.querySelector('body');
+const userName=document.querySelector('.name');
+const mail=document.querySelector('.email');
+const sendAlert=document.querySelector('.messageAlert');
+const closeBtn=document.querySelectorAll('.messageAlert button');
+const body=document.querySelector('body');
 const sendBtn=document.querySelector('.subBtn');
 let emptyValue=document.querySelector('.emptyValue');
 
@@ -45,7 +45,7 @@ let emptyValue=document.querySelector('.emptyValue');
 
 sendBtn.addEventListener('click', function(){
     if (userName.value == "" || mail.value == "" ){
-    emptyValue.classList.add('alertActive');
+    emptyValueAlert.classList.add('alertActive');
     }
     else{
         sendAlert.classList.add('alertActive');
@@ -60,29 +60,29 @@ sendBtn.addEventListener('click', function(){
 closeBtn.forEach(function(e){
     e.addEventListener("click", function(){
         sendAlert.classList.remove('alertActive');
-        emptyValue.classList.remove('alertActive');
+        emptyValueAlert.classList.remove('alertActive');
         body.classList.remove('stopScrolling');
     })
 })
 
 // Gallery
 
-let gallery=document.querySelector('.galleryWrap');
+const gallery=document.querySelector('.galleryWrap');
 let imgNumber=document.querySelector('.number');
-let closeGallery=document.querySelector('.closeGallery');
+const closeGallery=document.querySelector('.closeGallery');
 let img=document.querySelector('.gallery img');
-let galleryMiniArray=document.querySelectorAll('.worksItm h1');
-let previous=document.querySelector('.fa-chevron-left')
-let next=document.querySelector('.fa-chevron-right')
+const galleryMiniArray=document.querySelectorAll('.worksItm h1');
+const previousPhoto=document.querySelector('.fa-chevron-left')
+const nextPhoto=document.querySelector('.fa-chevron-right')
 
-let index=1;
-let activeElm="";
+let activPhotoindex=1;
+let activeCategory="";
 const openGallery = (elem) => {
-            activeElm=elem.textContent;
+    activeCategory=elem.textContent;
             gallery.style.opacity="1";
             gallery.style.zIndex="4";
-            imgNumber.textContent=index;
-            img.setAttribute('src', `img/${activeElm}${index}.jpg`);
+            imgNumber.textContent=activPhotoindex;
+            img.setAttribute('src', `img/${activeCategory}${activPhotoindex}.jpg`);
 }
 
 galleryMiniArray.forEach(function(elem) {
@@ -92,23 +92,23 @@ galleryMiniArray.forEach(function(elem) {
     });
 });
 
-next.addEventListener('click', function(){
-       index++;
-       imgNumber.textContent=index;
-       img.setAttribute('src', `img/${activeElm}${index}.jpg`);
-       previous.style.display="block";
-       if(index==5){
-        next.style.display="none"
+nextPhoto.addEventListener('click', function(){
+       activPhotoindex++;
+       imgNumber.textContent=activPhotoindex;
+       img.setAttribute('src', `img/${activeCategory}${activPhotoindex}.jpg`);
+       previousPhoto.style.display="block";
+       if(activPhotoindex==5){
+        nextPhoto.style.display="none"
        }
 })
 
-previous.addEventListener('click', function(){
-         --index;
-         imgNumber.textContent=index;
-         img.setAttribute('src', `img/${activeElm}${index}.jpg`);
-         next.style.display="block";
-        if(index == "1"){
-             previous.style.display="none"
+previousPhoto.addEventListener('click', function(){
+         --activPhotoindex;
+         imgNumber.textContent=activPhotoindex;
+         img.setAttribute('src', `img/${activeCategory}${activPhotoindex}.jpg`);
+         nextPhoto.style.display="block";
+        if(activPhotoindex == "1"){
+             previousPhoto.style.display="none"
           }
 })
 
@@ -116,9 +116,9 @@ closeGallery.addEventListener('click', function(){
     gallery.style.opacity="0";
     gallery.style.zIndex="-4";
     img.setAttribute('src', ``);
-    index=1
-    previous.style.display="none"
-    next.style.display="block";
+    activPhotoindex=1
+    previousPhoto.style.display="none"
+    nextPhoto.style.display="block";
     body.classList.remove('stopScrolling');
 })
 
