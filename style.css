@@ -96,6 +96,10 @@ header {
     font-size: 36px;
 }
 
+.title h3 {
+    font-size: 36px;
+}
+
 .title p {
     font-size: 26px;
 }
@@ -132,6 +136,10 @@ header {
         font-size: 50px;
     }
 
+    .title h3 {
+        font-size: 50px;
+    }
+
     .title p {
         font-size: 36px;
     }
@@ -154,6 +162,10 @@ header {
 
     .title h1 {
         font-size: 100px;
+    }
+
+    .title h3 {
+        font-size: 50px;
     }
 
     .title p {
@@ -218,6 +230,10 @@ header {
 
     .title h1 {
         font-size: 70px;
+    }
+
+    .title h3 {
+        font-size: 50px;
     }
 
     .title p {
@@ -511,7 +527,7 @@ ul li a {
     text-align: center;
 }
 
-.about h1 {
+.about h2 {
     font-size: 26px;
     text-transform: uppercase;
     padding: 15% 5% 3% 5%;
@@ -523,7 +539,7 @@ ul li a {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .about h1 {
+    .about h2 {
         font-size: 40px;
     }
 
@@ -533,7 +549,7 @@ ul li a {
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
-    .about h1 {
+    .about h2 {
         font-size: 26px;
         padding: 10% 5% 3% 5%;
     }
@@ -545,7 +561,7 @@ ul li a {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-    .about h1 {
+    .about h2 {
         font-size: 36px;
         padding: 10% 5% 3% 5%;
     }
@@ -557,7 +573,7 @@ ul li a {
 }
 
 @media (min-width: 1600px) and (orientation: landscape) {
-    .about h1 {
+    .about h2 {
         font-size: 32px;
         padding: 10% 5% 1% 5%;
     }
@@ -569,7 +585,7 @@ ul li a {
 }
 
 /* SECTION WORKS */
-.works h1 {
+.works h2 {
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
@@ -604,7 +620,7 @@ ul li a {
     background-position: center;
 }
 
-.worksItm h1 {
+.worksItm h3 {
     font-size: 24px;
     padding: 1%;
 }
@@ -618,7 +634,7 @@ ul li a {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.bgimg h1 {
+.bgimg h3 {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -627,6 +643,7 @@ ul li a {
     text-shadow: 3px 3px 5px black;
     box-shadow: 2px 2px 15px black;
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
     border: 2px solid rgb(255, 255, 255);
     cursor: pointer;
 }
@@ -656,17 +673,17 @@ ul li a {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .works h1 {
+    .works h2 {
         font-size: 40px;
     }
 
-    .worksItm h1 {
+    .worksItm h3 {
         font-size: 32px;
     }
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
-    .works h1 {
+    .works h2 {
         padding: 10% 5% 3% 5%;
     }
 
@@ -682,7 +699,7 @@ ul li a {
         height: 30vh;
     }
 
-    .worksItm h1 {
+    .worksItm h3 {
         font-size: 20px;
         padding: 3%;
     }
@@ -734,11 +751,11 @@ ul li a {
         height: 50vh;
     }
 
-    .works h1 {
+    .works h2 {
         font-size: 36px;
     }
 
-    .worksItm h1 {
+    .worksItm h3 {
         font-size: 26px;
     }
 }
@@ -816,12 +833,12 @@ ul li a {
         height: 30vh;
     }
 
-    .works h1 {
+    .works h2 {
         font-size: 32px;
         padding: 10% 5% 1% 5%;
     }
 
-    .worksItm h1 {
+    .worksItm h3 {
         font-size: 26px;
         padding: 5%;
     }
@@ -947,7 +964,7 @@ ul li a {
 }
 
 /* SECTION SLIDER */
-.slider h1 {
+.slider h2 {
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -965,7 +982,7 @@ ul li a {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .slider h1 {
+    .slider h2 {
         width: 70%;
         font-size: 40px;
         padding: 15% 5% 3% 5%;
@@ -987,7 +1004,7 @@ ul li a {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-    .slider h1 {
+    .slider h2 {
         width: 75%;
         font-size: 36px;
         padding: 15% 5% 3% 5%;
@@ -1001,7 +1018,7 @@ ul li a {
 }
 
 @media (min-width: 1600px) and (orientation: landscape) {
-    .slider h1 {
+    .slider h2 {
         font-size: 32px;
         padding: 10% 5% 1% 5%;
     }
@@ -1025,7 +1042,7 @@ ul li a {
 
 /* SECTION SOCIALS*/
 
-.socials h1 {
+.socials h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 26px;
@@ -1049,7 +1066,7 @@ ul li a {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .socials h1 {
+    .socials h2 {
         font-size: 40px;
     }
 
@@ -1063,7 +1080,7 @@ ul li a {
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
-    .socials h1 {
+    .socials h2 {
         padding: 20% 5% 3% 5%;
     }
 
@@ -1078,7 +1095,7 @@ ul li a {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-    .socials h1 {
+    .socials h2 {
         font-size: 36px;
     }
 
@@ -1110,7 +1127,7 @@ ul li a {
 }
 
 @media (min-width: 1600px) and (orientation: landscape) {
-    .socials h1 {
+    .socials h2 {
         font-size: 32px;
         padding: 10% 10% 1% 10%;
     }
@@ -1177,7 +1194,7 @@ ul li a {
     color: white;
 }
 
-.contact h1 {
+.contact h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 26px;
@@ -1250,7 +1267,7 @@ form p {
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-    .contact h1 {
+    .contact h2 {
         font-size: 40px;
         padding: 15% 5% 3% 5%;
     }
@@ -1296,7 +1313,7 @@ form p {
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
-    .contact h1 {
+    .contact h2 {
         padding: 5% 5% 3% 5%;
     }
 
@@ -1318,7 +1335,7 @@ form p {
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
-    .contact h1 {
+    .contact h2 {
         font-size: 36px;
         padding: 15% 5% 3% 5%;
     }
@@ -1364,13 +1381,13 @@ form p {
 }
 
 @media (min-width: 1440px) and (orientation: landscape) {
-    .contact h1 {
+    .contact h2 {
         padding: 10% 5% 3% 5%;
     }
 }
 
 @media (min-width: 1600px) and (orientation: landscape) {
-    .contact h1 {
+    .contact h2 {
         font-size: 32px;
         padding: 5% 5% 1% 5%;
     }
