@@ -905,6 +905,8 @@ ul li a {
     padding: 10px;
     font-size: 40px;
     color: white;
+    background-color: transparent;
+    border-color: transparent;
     cursor: pointer;
 }
 
@@ -917,6 +919,8 @@ ul li a {
     padding: 10px;
     font-size: 40px;
     color: white;
+    background-color: transparent;
+    border-color: transparent;
     cursor: pointer;
 }
 
