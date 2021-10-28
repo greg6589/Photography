@@ -1,0 +1,206 @@
+header {
+    position: relative;
+    height: 95vh;
+    background-image: url(/Photography/img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.wrap {
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+}
+
+.wrap p {
+    font-size: 20px;
+    padding: 0 1%;
+}
+
+.wrap h2 {
+    font-size: 40px;
+    padding-top: 60%;
+}
+
+.title {
+    font-family: 'Ephesis', cursive;
+    padding: 10%;
+}
+
+.title h1 {
+    font-size: 36px;
+}
+
+.title h3 {
+    font-size: 36px;
+}
+
+.title p {
+    font-size: 26px;
+}
+
+@media (min-width: 375px) and (orientation: portrait) {
+    .wrap h2 {
+        padding-top: 67%;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 812px) and (orientation: portrait) {
+    .wrap h2 {
+        padding-top: 105%;
+    }
+}
+
+@media (min-width: 414px) and (orientation: portrait) {
+    .wrap h2 {
+        padding-top: 75%;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .wrap p {
+        font-size: 30px;
+    }
+
+    .wrap h2 {
+        font-size: 40px;
+        padding-top: 65%;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .title h3 {
+        font-size: 50px;
+    }
+
+    .title p {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    .wrap p {
+        font-size: 36px;
+        padding: 0 10% 2% 10%;
+    }
+
+    .wrap h2 {
+        font-size: 48px;
+        padding-top: 70%;
+    }
+
+    .title {
+        padding: 5%;
+    }
+
+    .title h1 {
+        font-size: 100px;
+    }
+
+    .title h3 {
+        font-size: 50px;
+    }
+
+    .title p {
+        font-size: 50px;
+    }
+
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    header {
+        height: 94vh;
+    }
+
+    .wrap {
+        height: 94vh;
+    }
+
+    .wrap h2 {
+        font-size: 30px;
+        padding-top: 7%;
+    }
+
+    .title {
+        padding: 5%;
+    }
+}
+
+@media (min-width: 660px) and (orientation: landscape) {
+    header {
+        height: 93vh;
+    }
+
+    .wrap {
+        height: 93vh;
+    }
+
+    .wrap h2 {
+        font-size: 30px;
+        padding-top: 7%;
+    }
+
+    .title {
+        padding: 5%;
+    }
+
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .wrap p {
+        font-size: 32px;
+        padding: 0 10% 1% 10%;
+    }
+
+    .wrap h2 {
+        font-size: 48px;
+        padding-top: 30%;
+    }
+
+    .title {
+        padding: 2%;
+    }
+
+    .title h1 {
+        font-size: 70px;
+    }
+
+    .title h3 {
+        font-size: 50px;
+    }
+
+    .title p {
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    .wrap h2 {
+        padding-top: 27%;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    header {
+        height: 95vh;
+    }
+
+    .wrap {
+        height: 95vh;
+    }
+
+    .wrap p {
+        font-size: 28px;
+    }
+
+    .wrap h2 {
+        font-size: 40px;
+        padding-top: 25%;
+    }
+
+}

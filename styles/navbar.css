@@ -1,0 +1,251 @@
+nav {
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    z-index: 2;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    background-color: white;
+}
+
+.navbar a {
+    align-self: center;
+    padding-left: 10px;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Ephesis', cursive;
+    color: black;
+}
+
+.burger {
+    align-self: center;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    text-align: center;
+    padding: 5% 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+.menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    z-index: 3;
+}
+
+.menu ul li {
+    width: 100%;
+    padding: 10%;
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+    padding: 2px;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(53, 53, 53);
+}
+
+.active {
+    display: block;
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .navbar a {
+        font-size: 36px;
+        padding-left: 20px;
+    }
+
+    .burger {
+        padding-right: 20px;
+        font-size: 36px;
+    }
+
+    .menu ul {
+        width: 60%;
+    }
+
+    ul li a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    .navbar a {
+        font-size: 46px;
+        padding-left: 40px;
+    }
+
+    .burger {
+        padding-right: 40px;
+        font-size: 46px;
+    }
+
+    ul li a {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    nav {
+        height: 6vh;
+    }
+
+    .navbar {
+        height: 6vh;
+    }
+
+    .menu ul {
+        width: 50%;
+    }
+
+    .menu ul li {
+        padding: 5%;
+    }
+
+    ul li a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 660px) and (orientation: landscape) {
+    nav {
+        height: 7vh;
+    }
+
+    .navbar {
+        height: 7vh;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .navbar a {
+        font-size: 36px;
+    }
+
+    .burger {
+        padding-right: 20px;
+        font-size: 32px;
+    }
+
+    .menu ul {
+        width: 50%;
+    }
+
+    ul li a {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    .burger {
+        display: none;
+    }
+
+    nav {
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar {
+        height: 7vh;
+    }
+
+    .menu {
+        display: block;
+        width: 60%;
+        height: 7vh;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 7vh;
+        padding: 0;
+    }
+
+    .menu ul li {
+        position: relative;
+        padding: 0;
+    }
+
+    ul li a::before {
+        opacity: 0;
+        content: "";
+        width: 80px;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transform: translate(-50%, 0%);
+        background-color: var(--rosa-details-color);
+    }
+
+    ul li:hover a::before {
+        opacity: 1;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        transition: 0.2s;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    nav {
+        height: 5vh;
+    }
+
+    .navbar {
+        height: 5vh;
+    }
+
+    .menu {
+        height: 5vh;
+    }
+
+    .menu ul {
+        height: 5vh;
+    }
+
+    ul li a::before {
+        bottom: -2px;
+    }
+}

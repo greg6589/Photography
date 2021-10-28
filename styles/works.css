@@ -1,0 +1,258 @@
+.works h2 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 15% 5% 3% 5%;
+}
+
+.worksContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.worksWrapp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.worksItm {
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.worksItm h3 {
+    font-size: 24px;
+    padding: 1%;
+}
+
+.bgimg {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 25vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bgimg h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    text-shadow: 3px 3px 5px black;
+    box-shadow: 2px 2px 15px black;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.nature {
+    background-image: url(/Photography/img/nature.jpg);
+}
+
+.people {
+    background-image: url(/Photography/img/people.jpg);
+}
+
+.wedding {
+    background-image: url(/Photography/img/wedding.jpg);
+}
+
+.urban {
+    background-image: url(/Photography/img/urban.jpg);
+}
+
+.architecture {
+    background-image: url(/Photography/img/architecture.jpg);
+}
+
+.animals {
+    background-image: url(/Photography/img/animals.jpg);
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .works h2 {
+        font-size: 40px;
+    }
+
+    .worksItm h3 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    .works h2 {
+        padding: 10% 5% 3% 5%;
+    }
+
+    .worksContainer {
+        flex-direction: row;
+    }
+
+    .worksWrapp {
+        width: 47%;
+    }
+
+    .worksItm {
+        height: 30vh;
+    }
+
+    .worksItm h3 {
+        font-size: 20px;
+        padding: 3%;
+    }
+
+    .bgimg {
+        height: 30vh;
+    }
+
+    .wedding {
+        height: 50vh;
+    }
+
+    .wedding .bgimg {
+        height: 50vh;
+    }
+
+    .urban {
+        height: 50vh;
+    }
+
+    .urban .bgimg {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .worksContainer {
+        flex-direction: row;
+    }
+
+    .worksWrapp {
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .wedding {
+        height: 50vh;
+    }
+
+    .wedding .bgimg {
+        height: 50vh;
+    }
+
+    .urban {
+        height: 50vh;
+    }
+
+    .urban .bgimg {
+        height: 50vh;
+    }
+
+    .works h2 {
+        font-size: 36px;
+    }
+
+    .worksItm h3 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    .left {
+        width: 55%;
+    }
+
+    .right {
+        width: 35%;
+    }
+
+    .bgimg:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    .worksContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .worksWrapp {
+        width: 49%;
+    }
+
+    .nature {
+        height: 30vh;
+    }
+
+    .nature .bgimg {
+        height: 30vh;
+    }
+
+    .people {
+        height: 50vh;
+    }
+
+    .people .bgimg {
+        height: 50vh;
+    }
+
+    .wedding {
+        height: 40vh;
+    }
+
+    .wedding .bgimg {
+        height: 40vh;
+    }
+
+    .urban {
+        height: 40vh
+    }
+
+    .urban .bgimg {
+        height: 40vh;
+    }
+
+    .architecture {
+        height: 50vh
+    }
+
+    .architecture .bgimg {
+        height: 50vh;
+    }
+
+    .animals {
+        height: 30vh;
+    }
+
+    .animals .bgimg {
+        height: 30vh;
+    }
+
+    .works h2 {
+        font-size: 32px;
+        padding: 10% 5% 1% 5%;
+    }
+
+    .worksItm h3 {
+        font-size: 26px;
+        padding: 5%;
+    }
+}

@@ -1,0 +1,107 @@
+.socials h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 15% 5% 3% 5%;
+}
+
+.socials div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15%;
+}
+
+.socials div a {
+    font-size: 30px;
+    color: black
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .socials h2 {
+        font-size: 40px;
+    }
+
+    .socials div {
+        padding-bottom: 5%;
+    }
+
+    .socials div a {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    .socials h2 {
+        padding: 20% 5% 3% 5%;
+    }
+
+    .socials div {
+        width: 60%;
+    }
+
+    .socials div a {
+        font-size: 26px;
+
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .socials h2 {
+        font-size: 36px;
+    }
+
+    .socials div {
+        padding-bottom: 5%;
+    }
+
+    .socials div a {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    .socials div a {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        vertical-align: center;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+
+    .socials div a:hover {
+        color: white;
+        box-shadow: 0px 0px 0px 3px var(--rosa-details-color);
+        background-color: var(--rosa-details-color);
+    }
+}
+
+@media (min-width: 1600px) and (orientation: landscape) {
+    .socials h2 {
+        font-size: 32px;
+        padding: 10% 10% 1% 10%;
+    }
+
+    .socials div {
+        width: 30%;
+    }
+
+    .socials div a {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        font-size: 30px;
+        line-height: 60px;
+        border: 2px solid white;
+    }
+
+    .socials div a:hover {
+        box-shadow: 0px 0px 0px 2px var(--rosa-details-color);
+    }
+}
