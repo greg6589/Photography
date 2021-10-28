@@ -72,7 +72,7 @@ const gallery=document.querySelector('.galleryWrap');
 let imgNumber=document.querySelector('.number');
 const closeGallery=document.querySelector('.closeGallery');
 let img=document.querySelector('.gallery img');
-const galleryMiniArray=document.querySelectorAll('.worksItm h1');
+const galleryMiniArray=document.querySelectorAll('.worksItm h3');
 const previousPhoto=document.querySelector('.fa-chevron-left')
 const nextPhoto=document.querySelector('.fa-chevron-right')
 
@@ -108,7 +108,7 @@ previousPhoto.addEventListener('click', function(){
          imgNumber.textContent=activPhotoindex;
          img.setAttribute('src', `img/${activeCategory}${activPhotoindex}.jpg`);
          nextPhoto.style.display="block";
-        if(activPhotoindex === "1"){
+        if(activPhotoindex === 1){
              previousPhoto.style.display="none"
           }
 })
