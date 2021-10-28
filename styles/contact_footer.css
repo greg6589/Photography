@@ -38,6 +38,7 @@
     background-color: var(--rosa-details-color);
     border: 1px solid var(--rosa-details-color);
     color: white;
+    cursor: pointer;
 }
 
 .contact h2 {
