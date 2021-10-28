@@ -38,12 +38,13 @@ const sendAlert=document.querySelector('.messageAlert');
 const closeBtn=document.querySelectorAll('.messageAlert button');
 const body=document.querySelector('body');
 const sendBtn=document.querySelector('.subBtn');
-let emptyValue=document.querySelector('.emptyValue');
+let emptyValueAlert=document.querySelector('.emptyValueAlert');
 
 
 // form input value verification and reset
 
-sendBtn.addEventListener('click', function(){
+sendBtn.addEventListener('click', function(e){
+    e.preventDefault();
     if (userName.value === "" || mail.value === "" ){
     emptyValueAlert.classList.add('alertActive');
     }
