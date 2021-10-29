@@ -47,6 +47,7 @@ sendBtn.addEventListener('click', function(e){
     e.preventDefault();
     if (userName.value === "" || mail.value === "" ){
     emptyValueAlert.classList.add('alertActive');
+    body.classList.add('stopScrolling');
     }
     else{
         sendAlert.classList.add('alertActive');
