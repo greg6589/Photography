@@ -7,4 +7,4 @@ small gallery and contact formular (not working yet but i will change this soon)
 
 
 Here you can see the live version of it:
-https://juzba.github.io/Photography/
+https://greg6589.github.io/Photography/
